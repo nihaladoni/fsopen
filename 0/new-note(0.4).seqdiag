@@ -1,0 +1,4 @@
+user->server:navigates to submission site
+server-->user:sends a response HTML
+user->server:adds a new note to notes collection
+server-->user:responds with a new HTML page(browser reloads) with updated data
