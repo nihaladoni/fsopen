@@ -10,10 +10,15 @@ browser starts executing js-code
 that requests JSON data from server
 end note
 
-browser->server: (form-data) HTTP POST https://studies.cs.helsinki.fi/exampleapp/data.json
+browser->server: (form-data) HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server:
+server updates the notes collection
+and sends the updated data to the browser
+end note
 server-->browser: Updated notes JSON response
 
 note over browser:
-browser does not reload and renders new content
+browser does not reload and
+renders new content
 thus enhancing user experience
 end note

@@ -15,12 +15,10 @@ note over server:
 server updates the notes collection
 and sends the updated data to the browser
 end note
-server-->browser: HTML-code
-server-->browser: main.css
-server-->browser: main.js
 server-->browser: Updated notes JSON response
 
 note over browser:
-browser reloads to render the page
-with updated notes
+browser does not reload and
+renders new content
+thus enhancing user experience
 end note
