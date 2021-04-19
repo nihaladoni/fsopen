@@ -1,4 +1,19 @@
-user->server:navigates to submission site
-server-->user:sends a response HTML
-user->server:adds a new note to notes collection
-server-->user:responds with a new HTML page(browser reloads) with updated data
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server
+end note
+
+browser->server: (form-data) HTTP POST https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: Updated notes JSON response
+
+note over browser:
+browser reloads to render the page
+with updated notes
+end note
