@@ -27,10 +27,9 @@ const App = () => {
     } else {
       setShowAll(true);
     }
-    const filteredArr = person.filter((element) =>
-      element.name.toLowerCase().charAt(0).indexOf(term.toLowerCase()) !== -1
-        ? element
-        : null
+   
+ const filterArr = person.filter((person) =>
+      person.name.toLowerCase().startsWith(term.toLowerCase()) ? person : null
     );
 
     setFiltered([...filteredArr]);

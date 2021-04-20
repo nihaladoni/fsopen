@@ -1,0 +1,23 @@
+h5 {
+  margin: 0;
+  border: none !important;
+}
+
+.notify {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  background-color: rgb(206, 206, 206);
+}
+
+.success {
+  border: 5px solid green;
+  border-radius: 10px;
+  color: green;
+}
+
+.error {
+  border: 5px solid red;
+  border-radius: 10px;
+  color: red;
+}
