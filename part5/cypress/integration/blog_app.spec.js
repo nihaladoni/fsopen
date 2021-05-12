@@ -8,7 +8,7 @@ describe("Note app", function () {
   });
 
   it("after login, page contains logged in ", function () {
-    cy.contains("shanta logged in");
+    cy.contains("user logged in");
   });
 
   // it("front page contains longin butto", function () {
