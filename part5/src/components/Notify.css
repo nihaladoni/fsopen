@@ -1,0 +1,16 @@
+.alert {
+  background-color: rgb(211, 211, 211);
+  padding: 16px;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 10px;
+}
+
+.success {
+  color: green;
+  border: 3px solid green;
+}
+.error {
+  color: red;
+  border: 3px solid red;
+}
