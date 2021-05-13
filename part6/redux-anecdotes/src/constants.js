@@ -1,0 +1,6 @@
+export const INCREASE_VOTE = "INCREASE_VOTE";
+export const CREATE_ANECDOTE = "CREATE_ANECDOTE";
+export const GET_ANECDOTES = "GET_ANECDOTES";
+
+export const SET_NOTIF = "SET_NOTIF";
+export const REMOVE_NOTIF = "REMOVE_NOTIF";
